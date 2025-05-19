@@ -52,38 +52,39 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Featured Categories */}
-        <section className="py-12 bg-green-50">
-          <div className="container px-4 md:px-6 mx-auto">
-            <h2 className="text-3xl font-bold tracking-tight text-center mb-12">
-              Entdecke unsere <span className="text-green-600">Kategorien</span>
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {[
-                { name: "Frühstück", slug: "breakfast", image: "/placeholder.svg?height=300&width=300" },
-                { name: "Salate", slug: "salad", image: "/placeholder.svg?height=300&width=300" },
-                { name: "Hauptgerichte", slug: "main-dish", image: "/placeholder.svg?height=300&width=300" },
-                { name: "Desserts", slug: "dessert", image: "/placeholder.svg?height=300&width=300" },
-              ].map((category) => (
-                  <Link
-                      key={category.slug}
-                      href={`/recipes/${category.slug}`}
-                      className="group relative overflow-hidden rounded-xl aspect-square transition-all hover:scale-[1.03]"
-                  >
-                    <Image
-                        src={category.image || "/placeholder.svg"}
-                        alt={category.name}
-                        fill
-                        className="object-cover transition-transform group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-6">
-                      <h3 className="text-xl font-medium text-white">{category.name}</h3>
-                    </div>
-                  </Link>
-              ))}
-            </div>
-          </div>
-        </section>
+
+        {/*/!* Featured Categories *!/*/}
+        {/*<section className="py-12 bg-green-50">*/}
+        {/*  <div className="container px-4 md:px-6 mx-auto">*/}
+        {/*    <h2 className="text-3xl font-bold tracking-tight text-center mb-12">*/}
+        {/*      Entdecke unsere <span className="text-green-600">Kategorien</span>*/}
+        {/*    </h2>*/}
+        {/*    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">*/}
+        {/*      {[*/}
+        {/*        { name: "Frühstück", slug: "breakfast", image: "/placeholder.svg?height=300&width=300" },*/}
+        {/*        { name: "Salate", slug: "salad", image: "/placeholder.svg?height=300&width=300" },*/}
+        {/*        { name: "Hauptgerichte", slug: "main-dish", image: "/placeholder.svg?height=300&width=300" },*/}
+        {/*        { name: "Desserts", slug: "dessert", image: "/placeholder.svg?height=300&width=300" },*/}
+        {/*      ].map((category) => (*/}
+        {/*          <Link*/}
+        {/*              key={category.slug}*/}
+        {/*              href={`/recipes/${category.slug}`}*/}
+        {/*              className="group relative overflow-hidden rounded-xl aspect-square transition-all hover:scale-[1.03]"*/}
+        {/*          >*/}
+        {/*            <Image*/}
+        {/*                src={category.image || "/placeholder.svg"}*/}
+        {/*                alt={category.name}*/}
+        {/*                fill*/}
+        {/*                className="object-cover transition-transform group-hover:scale-105"*/}
+        {/*            />*/}
+        {/*            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-6">*/}
+        {/*              <h3 className="text-xl font-medium text-white">{category.name}</h3>*/}
+        {/*            </div>*/}
+        {/*          </Link>*/}
+        {/*      ))}*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</section>*/}
 
         {/* Featured Posts */}
         <FeaturedPosts />

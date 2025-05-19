@@ -8,87 +8,92 @@ export default function FeaturedPosts() {
   const posts = [
     {
       id: 1,
-      title: "The Benefits of Eating Seasonal Produce",
-      excerpt: "Discover why eating fruits and vegetables in season is better for your health, wallet, and the planet.",
+      title: "Die Vorteile saisonaler Ernährung",
+      excerpt: "Warum saisonales Obst und Gemüse besser für Gesundheit, Umwelt und Geldbeutel ist.",
       image: "/placeholder.svg?height=400&width=600",
-      date: "May 15, 2023",
-      readTime: "5 min read",
-      category: "Nutrition",
+      date: "15. Mai 2023",
+      readTime: "5 Min. Lesezeit",
+      category: "Ernährung",
     },
     {
       id: 2,
-      title: "How to Start Your Own Organic Garden",
-      excerpt: "A beginner's guide to growing your own organic vegetables, herbs, and fruits at home.",
+      title: "So startest du deinen Bio-Garten",
+      excerpt: "Ein Guide für Einsteiger zum Anbau von Gemüse, Kräutern und Obst zu Hause.",
       image: "/placeholder.svg?height=400&width=600",
-      date: "April 28, 2023",
-      readTime: "8 min read",
-      category: "Gardening",
+      date: "28. April 2023",
+      readTime: "8 Min. Lesezeit",
+      category: "Garten",
     },
     {
       id: 3,
-      title: "Understanding Organic Food Labels",
-      excerpt: "Learn how to decode organic food labels and make informed choices at the grocery store.",
+      title: "Bio-Siegel verstehen",
+      excerpt: "So liest du Bio-Etiketten richtig und triffst bessere Kaufentscheidungen.",
       image: "/placeholder.svg?height=400&width=600",
-      date: "April 10, 2023",
-      readTime: "6 min read",
-      category: "Food Education",
+      date: "10. April 2023",
+      readTime: "6 Min. Lesezeit",
+      category: "Lebensmittelwissen",
     },
   ]
 
   return (
-    <section className="py-16 bg-white">
-      <div className="container px-4 md:px-6 mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
-          <div>
-            <h2 className="text-3xl font-bold tracking-tight">
-              Latest from the <span className="text-green-600">Blog</span>
-            </h2>
-            <p className="text-gray-600 mt-2">Insights, tips, and stories about organic living</p>
+      <section className="py-16 bg-white">
+        <div className="container px-4 md:px-6 mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
+            <div>
+              <h2 className="text-3xl font-bold tracking-tight">
+                Neues im <span className="text-green-600">Blog</span>
+              </h2>
+              <p className="text-gray-600 mt-2">
+                Einblicke, Tipps und Geschichten rund um nachhaltiges Leben
+              </p>
+            </div>
+            <Button variant="ghost" className="text-green-600 hover:text-green-700 p-0 mt-4 md:mt-0">
+              Alle Beiträge ansehen
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
           </div>
-          <Button variant="ghost" className="text-green-600 hover:text-green-700 p-0 mt-4 md:mt-0">
-            View all posts
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-        </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {posts.map((post) => (
-            <Card key={post.id} className="overflow-hidden border-none shadow-md hover:shadow-xl transition-shadow">
-              <div className="relative h-48 w-full overflow-hidden">
-                <Image
-                  src={post.image || "/placeholder.svg"}
-                  alt={post.title}
-                  fill
-                  className="object-cover transition-transform hover:scale-105"
-                />
-                <div className="absolute top-4 left-4 bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">
-                  {post.category}
-                </div>
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-2 line-clamp-2">{post.title}</h3>
-                <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
-                <div className="flex items-center text-sm text-gray-500">
-                  <CalendarDays className="h-4 w-4 mr-1" />
-                  <span>{post.date}</span>
-                  <span className="mx-2">•</span>
-                  <Clock className="h-4 w-4 mr-1" />
-                  <span>{post.readTime}</span>
-                </div>
-              </CardContent>
-              <CardFooter className="pt-0 pb-6 px-6">
-                <Link
-                  href={`/blog/${post.id}`}
-                  className="text-green-600 font-medium hover:text-green-700 inline-flex items-center"
+          <div className="grid md:grid-cols-3 gap-8">
+            {posts.map((post) => (
+                <Card
+                    key={post.id}
+                    className="overflow-hidden border-none shadow-md hover:shadow-xl transition-shadow"
                 >
-                  Read more
-                  <ArrowRight className="ml-1 h-4 w-4" />
-                </Link>
-              </CardFooter>
-            </Card>
-          ))}
+                  <div className="relative h-48 w-full overflow-hidden">
+                    <Image
+                        src={post.image || "/placeholder.svg"}
+                        alt={post.title}
+                        fill
+                        className="object-cover transition-transform hover:scale-105"
+                    />
+                    <div className="absolute top-4 left-4 bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">
+                      {post.category}
+                    </div>
+                  </div>
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold mb-2 line-clamp-2">{post.title}</h3>
+                    <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
+                    <div className="flex items-center text-sm text-gray-500">
+                      <CalendarDays className="h-4 w-4 mr-1" />
+                      <span>{post.date}</span>
+                      <span className="mx-2">•</span>
+                      <Clock className="h-4 w-4 mr-1" />
+                      <span>{post.readTime}</span>
+                    </div>
+                  </CardContent>
+                  <CardFooter className="pt-0 pb-6 px-6">
+                    <Link
+                        href={`/blog/${post.id}`}
+                        className="text-green-600 font-medium hover:text-green-700 inline-flex items-center"
+                    >
+                      Weiterlesen
+                      <ArrowRight className="ml-1 h-4 w-4" />
+                    </Link>
+                  </CardFooter>
+                </Card>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
   )
 }

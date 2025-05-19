@@ -28,6 +28,9 @@ export default function Header() {
                   <Link href="/" className="text-lg font-medium transition-colors hover:text-green-600">
                     Startseite
                   </Link>
+                  <Link href="/macucina" className="text-lg font-medium transition-colors hover:text-green-600">
+                    Macucina Kurse
+                  </Link>
                   <Link href="/recipes" className="text-lg font-medium transition-colors hover:text-green-600">
                     Rezepte
                   </Link>
@@ -54,6 +57,9 @@ export default function Header() {
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/" className="text-sm font-medium transition-colors hover:text-green-600">
               Startseite
+            </Link>
+            <Link href="/macucina" className="text-sm font-medium transition-colors hover:text-green-600">
+              Macucina Kurse
             </Link>
             <Link href="/recipes" className="text-sm font-medium transition-colors hover:text-green-600">
               Rezepte
