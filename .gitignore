@@ -1,0 +1,57 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ────────────── Dependencies ──────────────
+/node_modules
+
+# ────────────── Next.js ──────────────
+/.next/
+/out/
+
+# ────────────── Production ──────────────
+/build
+/dist
+
+# ────────────── Environment Variables ──────────────
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ────────────── Debug & Logs ──────────────
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.log
+
+# ────────────── TypeScript ──────────────
+*.tsbuildinfo
+next-env.d.ts
+
+# ────────────── Vercel ──────────────
+.vercel
+
+# ────────────── Lint & Formatter ──────────────
+.eslintcache
+.prettiercache
+
+# ────────────── IDEs and Editors ──────────────
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ────────────── OS/System Files ──────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+*.tmp
+*.temp
+
+# ────────────── Optional: Lockfiles from other managers ──────────────
+pnpm-lock.yaml
+yarn.lock
+bun.lockb
