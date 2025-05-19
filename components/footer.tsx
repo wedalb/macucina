@@ -1,130 +1,59 @@
 import Link from "next/link"
-import { Leaf, Instagram, Twitter, Facebook, Mail } from "lucide-react"
+import { Mail, Phone, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Footer() {
   return (
-    <footer className="bg-green-900 text-white">
-      <div className="container px-4 md:px-6 py-12 mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2">
-              <Leaf className="h-6 w-6" />
-              <span className="text-xl font-bold tracking-tight">Organic Eats</span>
-            </Link>
-            <p className="text-green-200 text-sm">
-              Delicious recipes and insights about organic food that's good for you and the planet.
+      <footer className="bg-green-900 text-white py-12">
+        <div className="container mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+          {/* Brand & Description */}
+          <div>
+            <h2 className="text-2xl font-bold tracking-tight mb-4">MACucina</h2>
+            <p className="text-green-200 text-sm leading-relaxed">
+              Bio-Rezepte, bewusste Ernährung & gemeinsames Kochen – direkt aus Mecklenburg-Vorpommern.
             </p>
-            <div className="flex space-x-4">
-              <Button size="icon" variant="ghost" className="rounded-full hover:bg-green-800 hover:text-white">
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
-              </Button>
-              <Button size="icon" variant="ghost" className="rounded-full hover:bg-green-800 hover:text-white">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Button>
-              <Button size="icon" variant="ghost" className="rounded-full hover:bg-green-800 hover:text-white">
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
-              </Button>
-              <Button size="icon" variant="ghost" className="rounded-full hover:bg-green-800 hover:text-white">
+          </div>
+
+          {/* Kontaktinformationen */}
+          <div>
+            <h3 className="text-sm font-semibold uppercase mb-4 text-green-300">Kontakt</h3>
+            <ul className="space-y-3 text-sm text-green-200">
+              <li className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 mt-0.5" />
+                <div>
+                  <p>Am Dorfplatz 2</p>
+                  <p>19294 Gorlosen / OT Boek</p>
+                </div>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="h-5 w-5" />
+                <a href="tel:+4938755449322" className="hover:text-white transition-colors">038755 – 44 93 22</a>
+              </li>
+              <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5" />
-                <span className="sr-only">Email</span>
-              </Button>
-            </div>
-          </div>
-          <div>
-            <h3 className="font-bold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/" className="text-green-200 hover:text-white transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/recipes" className="text-green-200 hover:text-white transition-colors">
-                  Recipes
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-green-200 hover:text-white transition-colors">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-green-200 hover:text-white transition-colors">
-                  About
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-bold text-lg mb-4">Categories</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/recipes/breakfast" className="text-green-200 hover:text-white transition-colors">
-                  Breakfast
-                </Link>
-              </li>
-              <li>
-                <Link href="/recipes/main-dish" className="text-green-200 hover:text-white transition-colors">
-                  Main Dishes
-                </Link>
-              </li>
-              <li>
-                <Link href="/recipes/salad" className="text-green-200 hover:text-white transition-colors">
-                  Salads
-                </Link>
-              </li>
-              <li>
-                <Link href="/recipes/dessert" className="text-green-200 hover:text-white transition-colors">
-                  Desserts
-                </Link>
-              </li>
-              <li>
-                <Link href="/recipes/baking" className="text-green-200 hover:text-white transition-colors">
-                  Baking
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-bold text-lg mb-4">Contact</h3>
-            <ul className="space-y-2">
-              <li className="text-green-200">
-                <span className="block">Email:</span>
-                <a href="mailto:hello@organiceats.com" className="hover:text-white transition-colors">
-                  hello@organiceats.com
+                <a href="mailto:olgaseiwert77@gmail.com" className="hover:text-white transition-colors">
+                  olgaseiwert77@gmail.com
                 </a>
               </li>
-              <li className="text-green-200">
-                <span className="block">Follow:</span>
-                <a href="#" className="hover:text-white transition-colors">
-                  @organic.eats
-                </a>
-              </li>
-              <li className="text-green-200 mt-4">
-                <Button className="bg-white text-green-800 hover:bg-green-100">Subscribe to Newsletter</Button>
-              </li>
             </ul>
           </div>
-        </div>
-        <div className="border-t border-green-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-green-200 text-sm">© {new Date().getFullYear()} Organic Eats. All rights reserved.</p>
-          <div className="flex gap-4 mt-4 md:mt-0">
-            <Link href="/privacy" className="text-green-200 text-sm hover:text-white transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="text-green-200 text-sm hover:text-white transition-colors">
-              Terms of Service
-            </Link>
-            <Link href="/sitemap" className="text-green-200 text-sm hover:text-white transition-colors">
-              Sitemap
-            </Link>
+
+          {/* Newsletter */}
+          <div>
+            <h3 className="text-sm font-semibold uppercase mb-4 text-green-300">Newsletter</h3>
+            <p className="text-green-200 text-sm mb-4 leading-relaxed">
+              Abonniere unseren Newsletter für saisonale Rezepte, Events und Bio-Tipps.
+            </p>
+            <Button className="w-full bg-white text-green-900 hover:bg-green-100">
+              Jetzt abonnieren
+            </Button>
           </div>
         </div>
-      </div>
-    </footer>
+
+        {/* Bottom Bar */}
+        <div className="border-t border-green-800 mt-12 pt-6 text-center text-sm text-green-200">
+          © 2025 MACucina. Alle Rechte vorbehalten.
+        </div>
+      </footer>
   )
 }
