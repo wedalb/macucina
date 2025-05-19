@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import ContactSection from "@/components/contact-section";
 
 export default function BlogPage() {
   const posts = [
@@ -144,6 +145,7 @@ export default function BlogPage() {
             </div>
           </div>
         </div>
+        <ContactSection/>
       </div>
   )
 }

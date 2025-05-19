@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import FeaturedPosts from "@/components/featured-posts"
 import PopularRecipes from "@/components/popular-recipes"
 import Newsletter from "@/components/newsletter"
+import ContactSection from "@/components/contact-section";
 
 export default function Home() {
   return (
@@ -118,7 +119,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
+        <ContactSection/>
         {/* Newsletter */}
         <Newsletter />
       </div>

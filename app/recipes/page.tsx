@@ -12,6 +12,7 @@ import {
   SelectTrigger,
   SelectValue
 } from "@/components/ui/select"
+import ContactSection from "@/components/contact-section";
 
 export default function RecipesPage() {
   const recipes = [
@@ -195,6 +196,7 @@ export default function RecipesPage() {
             ))}
           </div>
         </div>
+        <ContactSection/>
       </div>
   )
 }
