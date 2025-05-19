@@ -8,10 +8,10 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Organic Eats - Delicious Organic Food Blog",
+  title: "MAcucina - Leckere Gerichte mit Olga Seiwert-Häring",
   description:
-      "Discover delicious organic recipes, sustainable living tips, and insights about organic food that's good for you and the planet.",
-  generator: 'v0.dev'
+      "Der einfache Weg zum guten, gesunden Leben heißt „Makrobiotik\". Makrobiotik muss erlebt werden, probiert werden, gekostet werden, dazu soll MAcucina beitragen",
+  generator: 'Heidi Albarazi'
 }
 
 export default function RootLayout({
