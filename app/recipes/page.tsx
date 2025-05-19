@@ -5,80 +5,82 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue
+} from "@/components/ui/select"
 
 export default function RecipesPage() {
   const recipes = [
     {
       id: 1,
-      title: "Quinoa Buddha Bowl mit geröstetem Gemüse",
-      description: "Ein nahrhafter, bunter Bowl voller Eiweiß und frischem Gemüse.",
-      image: "/placeholder.svg?height=400&width=600",
+      title: "Erdnuss-Apfel und Miso Aufstrich",
+      description: "Ein leckerer Brotaufstrich – süß, salzig, sauer kombiniert.",
+      image: "/recipes/1.jpg",
       prepTime: "15 Min.",
       cookTime: "25 Min.",
       difficulty: "Einfach",
-      category: "Hauptgericht",
-      tags: ["Vegan", "Glutenfrei"],
-      likes: 245,
+      category: "Aufstrich",
+      tags: ["Vegan", "Makrobiotik"],
+      likes: 112,
     },
     {
       id: 2,
-      title: "Honigglasierter Lachs mit Knoblauch-Brokkoli",
-      description: "Wildlachs mit süß-würziger Glasur und knusprigem Brokkoli.",
-      image: "/placeholder.svg?height=400&width=600",
-      prepTime: "10 Min.",
-      cookTime: "20 Min.",
+      title: "Brauche ich eigentlich einen Kochstil?",
+      description: "Beilage mit Fenchel, Orange und Lotuswurzel – kreativ und makrobiotisch.",
+      image: "/recipes/2.jpg",
+      prepTime: "20 Min.",
+      cookTime: "40 Min.",
       difficulty: "Mittel",
-      category: "Hauptgericht",
-      tags: ["Pescetarisch", "Proteinreich"],
-      likes: 189,
+      category: "Beilage",
+      tags: ["Makrobiotik", "Gemüse"],
+      likes: 96,
     },
     {
       id: 3,
-      title: "Hausgemachtes Sauerteigbrot",
-      description: "Rustikales Brot mit knuspriger Kruste und weichem Inneren.",
-      image: "/placeholder.svg?height=400&width=600",
-      prepTime: "30 Min.",
-      cookTime: "45 Min.",
-      difficulty: "Fortgeschritten",
-      category: "Backen",
-      tags: ["Backen", "Vegetarisch"],
-      likes: 312,
+      title: "Linsen-Brot-Pastete mit Wein",
+      description: "Herzhaftes Rezept zur Resteverwertung mit Linsen, Brot und Zwiebeln.",
+      image: "/recipes/3.jpg",
+      prepTime: "20 Min.",
+      cookTime: "40 Min.",
+      difficulty: "Mittel",
+      category: "Hauptgericht",
+      tags: ["Vegan", "Makrobiotik"],
+      likes: 142,
     },
     {
       id: 4,
-      title: "Sommerlicher Chia-Pudding mit Beeren",
-      description: "Ein frisches Frühstück oder Dessert mit Antioxidantien.",
-      image: "/placeholder.svg?height=400&width=600",
+      title: "Mousse von Erdnuss und Apfel",
+      description: "Schnelles Dessert mit Erdnussmus und Apfelsaft – makrobiotisch inspiriert.",
+      image: "/recipes/4.jpg",
       prepTime: "10 Min.",
-      cookTime: "4 Std.",
+      cookTime: "10 Min.",
       difficulty: "Einfach",
-      category: "Frühstück",
-      tags: ["Vegan", "Ohne Kochen"],
-      likes: 176,
-    }
+      category: "Dessert",
+      tags: ["Makrobiotik", "Süßspeise"],
+      likes: 78,
+    },
   ]
 
   const categories = [
     "Alle Kategorien",
-    "Frühstück",
+    "Aufstrich",
+    "Beilage",
     "Hauptgericht",
-    "Salat",
-    "Suppe",
     "Dessert",
-    "Backen",
-    "Snack"
+    "Suppe",
+    "Frühstück"
   ]
 
   const dietaryTags = [
     "Vegan",
     "Vegetarisch",
+    "Makrobiotik",
     "Glutenfrei",
-    "Laktosefrei",
-    "Pescetarisch",
-    "Proteinreich",
-    "Kohlenhydratarm",
-    "Ohne Kochen"
+    "Süßspeise"
   ]
 
   return (
@@ -125,9 +127,9 @@ export default function RecipesPage() {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="all">Alle Schwierigkeitsgrade</SelectItem>
-                  <SelectItem value="easy">Einfach</SelectItem>
-                  <SelectItem value="medium">Mittel</SelectItem>
-                  <SelectItem value="advanced">Fortgeschritten</SelectItem>
+                  <SelectItem value="einfach">Einfach</SelectItem>
+                  <SelectItem value="mittel">Mittel</SelectItem>
+                  <SelectItem value="fortgeschritten">Fortgeschritten</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -191,15 +193,6 @@ export default function RecipesPage() {
                   </CardFooter>
                 </Card>
             ))}
-          </div>
-
-          {/* Pagination */}
-          <div className="mt-10 flex justify-center">
-            <Button variant="outline" className="mr-2">Zurück</Button>
-            <Button variant="outline" className="bg-green-50">1</Button>
-            <Button variant="outline" className="mx-1">2</Button>
-            <Button variant="outline" className="mx-1">3</Button>
-            <Button variant="outline" className="ml-2">Weiter</Button>
           </div>
         </div>
       </div>
