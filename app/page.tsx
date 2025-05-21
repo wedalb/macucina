@@ -98,7 +98,7 @@ export default function Home() {
           <div className="container px-4 md:px-6 mx-auto">
             <div className="grid md:grid-cols-2 gap-10 items-center">
               <div className="relative h-[400px] rounded-2xl overflow-hidden">
-                <Image src="/olga2.jpeg" alt="Olga Häring-Seiwert" fill className="object-cover" />
+                <Image src="/olga2.jpg" alt="Olga Häring-Seiwert" fill className="object-cover" />
               </div>
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold tracking-tight">
