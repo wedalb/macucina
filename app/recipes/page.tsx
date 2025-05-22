@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Clock, Filter, Search, ThumbsUp } from "lucide-react"
+import { Clock, Filter, Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
@@ -13,58 +13,17 @@ import {
   SelectValue
 } from "@/components/ui/select"
 import ContactSection from "@/components/contact-section";
+import recipesData from "@/data/recipes.json"
 
 export default function RecipesPage() {
-  const recipes = [
-    {
-      id: 1,
-      title: "Erdnuss-Apfel und Miso Aufstrich",
-      description: "Ein leckerer Brotaufstrich – süß, salzig, sauer kombiniert.",
-      image: "/recipes/1.jpg",
-      prepTime: "15 Min.",
-      cookTime: "25 Min.",
-      difficulty: "Einfach",
-      category: "Aufstrich",
-      tags: ["Vegan", "Makrobiotik"],
-      likes: 112,
-    },
-    {
-      id: 2,
-      title: "Brauche ich eigentlich einen Kochstil?",
-      description: "Beilage mit Fenchel, Orange und Lotuswurzel – kreativ und makrobiotisch.",
-      image: "/recipes/2.jpg",
-      prepTime: "20 Min.",
-      cookTime: "40 Min.",
-      difficulty: "Mittel",
-      category: "Beilage",
-      tags: ["Makrobiotik", "Gemüse"],
-      likes: 96,
-    },
-    {
-      id: 3,
-      title: "Linsen-Brot-Pastete mit Wein",
-      description: "Herzhaftes Rezept zur Resteverwertung mit Linsen, Brot und Zwiebeln.",
-      image: "/recipes/3.jpg",
-      prepTime: "20 Min.",
-      cookTime: "40 Min.",
-      difficulty: "Mittel",
-      category: "Hauptgericht",
-      tags: ["Vegan", "Makrobiotik"],
-      likes: 142,
-    },
-    {
-      id: 4,
-      title: "Mousse von Erdnuss und Apfel",
-      description: "Schnelles Dessert mit Erdnussmus und Apfelsaft – makrobiotisch inspiriert.",
-      image: "/recipes/4.jpg",
-      prepTime: "10 Min.",
-      cookTime: "10 Min.",
-      difficulty: "Einfach",
-      category: "Dessert",
-      tags: ["Makrobiotik", "Süßspeise"],
-      likes: 78,
-    },
-  ]
+  // Process recipes to set default image if not provided
+  const recipes = recipesData.map(recipe => {
+    return {
+      ...recipe,
+      // Use default image if not provided
+      image: recipe.image || "/placeholder.svg"
+    }
+  })
 
   const categories = [
     "Alle Kategorien",
@@ -174,19 +133,13 @@ export default function RecipesPage() {
                     </div>
                     <h3 className="text-lg font-bold mb-2 line-clamp-2">{recipe.title}</h3>
                     <p className="text-gray-600 text-sm mb-3 line-clamp-2">{recipe.description}</p>
-                    <div className="flex items-center justify-between text-sm">
-                      <div className="flex items-center text-gray-500">
-                        <Clock className="h-4 w-4 mr-1" />
-                        <span>{recipe.prepTime} Vorbereitung • {recipe.cookTime} Kochen</span>
-                      </div>
-                      <div className="flex items-center text-gray-500">
-                        <ThumbsUp className="h-4 w-4 mr-1" />
-                        <span>{recipe.likes}</span>
-                      </div>
+                    <div className="flex items-center text-sm text-gray-500">
+                      <Clock className="h-4 w-4 mr-1" />
+                      <span>{recipe.prepTime} Vorbereitung • {recipe.cookTime} Kochen</span>
                     </div>
                   </CardContent>
                   <CardFooter className="pt-0 pb-5 px-5">
-                    <Link href={`/rezepte/${recipe.id}`} className="w-full">
+                    <Link href={`/recipes/${recipe.id}`} className="w-full">
                       <Button variant="outline" className="w-full border-green-600 text-green-600 hover:bg-green-50">
                         Zum Rezept
                       </Button>

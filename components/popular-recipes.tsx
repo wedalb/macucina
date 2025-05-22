@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Clock, Bookmark, ThumbsUp, ArrowRight } from "lucide-react"
+import { Clock, Bookmark, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -16,7 +16,6 @@ export default function PopularRecipes() {
       cookTime: "25 min",
       difficulty: "Einfach",
       tags: ["Vegan", "Gluten-Frei"],
-      likes: 120,
     },
     {
       id: 2,
@@ -27,7 +26,6 @@ export default function PopularRecipes() {
       cookTime: "40 min",
       difficulty: "Medium",
       tags: ["Makrobiotik", "Außergewöhnlich"],
-      likes: 86,
     },
     {
       id: 3,
@@ -38,7 +36,6 @@ export default function PopularRecipes() {
       cookTime: "40 min",
       difficulty: "Medium",
       tags: ["Makrobiotik", "Resteverwertung"],
-      likes: 97,
     },
     {
       id: 4,
@@ -49,7 +46,6 @@ export default function PopularRecipes() {
       cookTime: "40 min",
       difficulty: "Medium",
       tags: ["Makrobiotik", "Dessert"],
-      likes: 78,
     },
   ]
 
@@ -105,21 +101,15 @@ export default function PopularRecipes() {
                     </div>
                     <h3 className="text-lg font-bold mb-2 line-clamp-2">{recipe.title}</h3>
                     <p className="text-gray-600 text-sm mb-3 line-clamp-2">{recipe.description}</p>
-                    <div className="flex items-center justify-between text-sm">
-                      <div className="flex items-center text-gray-500">
-                        <Clock className="h-4 w-4 mr-1" />
-                        <span>
+                    <div className="flex items-center text-sm text-gray-500">
+                      <Clock className="h-4 w-4 mr-1" />
+                      <span>
                       {recipe.prepTime} Vorbereitung • {recipe.cookTime} Kochen
                     </span>
-                      </div>
-                      <div className="flex items-center text-gray-500">
-                        <ThumbsUp className="h-4 w-4 mr-1" />
-                        <span>{recipe.likes}</span>
-                      </div>
                     </div>
                   </CardContent>
                   <CardFooter className="pt-0 pb-5 px-5">
-                    <Link href={`/rezepte/${recipe.id}`} className="w-full">
+                    <Link href={`/recipes/${recipe.id}`} className="w-full">
                       <Button
                           variant="outline"
                           className="w-full border-green-600 text-green-600 hover:bg-green-50"

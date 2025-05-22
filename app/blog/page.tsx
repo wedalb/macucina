@@ -5,51 +5,23 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import ContactSection from "@/components/contact-section";
+import ContactSection from "@/components/contact-section"
+import blogPosts from "@/data/blogs.json"
 
 export default function BlogPage() {
-  const posts = [
-    {
-      id: 1,
-      title: "Optimale Ernährung",
-      excerpt: "Optimale Nahrung erleichtert es ungemein, geistig gesund zu sein, aber das führt nicht automatisch dahin.",
-      image: "/blog/1.jpg",
-      date: "20.03.2022",
-      readTime: "5 Min. Lesezeit",
-      category: "Wissenswertes",
-      tags: ["Ernährung", "Makrobiotik"],
-    },
-    {
-      id: 2,
-      title: "Entscheidungen",
-      excerpt: "Unsere Gesellschaft trifft zur Zeit große Entscheidungen, die den Verlauf der Geschichte stark beeinflussen.",
-      image: "/blog/2.jpg",
-      date: "20.03.2022",
-      readTime: "6 Min. Lesezeit",
-      category: "Wissenswertes",
-      tags: ["Entscheidungen", "Makrobiotik"],
-    },
-    {
-      id: 3,
-      title: "Frische Kräuter – EASY MACROBIOTICS",
-      excerpt: "Makrobiotik, Yin-Yang-Energien und warum frische Kräuter nicht getrocknet werden sollten.",
-      image: "/blog/3.jpg",
-      date: "10.10.2021",
-      readTime: "7 Min. Lesezeit",
-      category: "Lesetipps",
-      tags: ["Makrobiotik", "Kräuter"],
-    },
-    {
-      id: 4,
-      title: "Makrobiotik und Kindheit",
-      excerpt: "Wie sich Ernährung in der Kindheit nachhaltig auf unser Leben auswirkt.",
-      image: "/blog/4.jpg",
-      date: "10.10.2021",
-      readTime: "4 Min. Lesezeit",
-      category: "Lesetipps",
-      tags: ["Kindheit", "Makrobiotik"],
-    },
-  ]
+  // Process blog posts to add read time
+  const posts = blogPosts.map(post => {
+    // Estimate read time based on content length (roughly 200 words per minute)
+    const wordCount = post.content.split(/\s+/).length
+    const readTime = `${Math.max(1, Math.ceil(wordCount / 200))} Min. Lesezeit`
+
+    return {
+      ...post,
+      readTime,
+      // Use default image if not provided
+      image: post.image || "/blog/placeholder.jpg"
+    }
+  })
 
   return (
       <div className="flex flex-col min-h-screen">
