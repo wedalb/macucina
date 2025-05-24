@@ -30,10 +30,10 @@ export default function Home() {
                   <span>Natürlich leben</span>
                 </div>
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tighter text-white">
-                  Nähre deinen Körper, <span className="text-green-400">achte auf die Erde</span>
+                  Die kleine Küche für <span className="text-green-400">große Werke </span>
                 </h1>
                 <p className="text-xl text-gray-200 max-w-[600px]">
-                  Entdecke köstliche Bio-Rezepte, nachhaltige Impulse und Inspirationen für ein achtsames Leben.
+                  Entdecke köstliche Makrobiotik-Rezepte, nachhaltige Impulse und Inspirationen für ein gesundes und glückliches Leben.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Button size="lg" className="bg-green-600 hover:bg-green-700">

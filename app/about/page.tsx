@@ -46,16 +46,14 @@ export default function AboutPage() {
                   Hallo, ich bin <span className="text-green-600">Olga Häring-Seiwert</span>
                 </h2>
                 <p className="text-gray-600 leading-relaxed">
-                  Ich bin ausgebildete Reformhausfachfrau, leidenschaftliche Köchin und Unternehmerin mit über einem Jahrzehnt Erfahrung im Bereich gesunder Ernährung und nachhaltiger Lebensweise.
+                  Reformhausbetreiberin, Makrobiotik-Köchin und Inhaberin von MAcucina mit fast zwei Jahrzehnt Erfahrung im Bereich Makrobiotik, gesunder Ernährung und nachhaltiger Lebensweise.                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  Von 2011 bis heute leite ich das traditionsreiche Reformhaus und Biomarkt in Marktredwitz (ursprünglich Reformhaus Wölfel). Dort darf ich zusammen mit Mitarbeitenden viele Kund:innen auf ihrem Weg zu einer bewussteren Ernährung begleiten.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  Von 2011 bis 2024 leitete ich das traditionsreiche Reformhaus und Biomarkt Georg Fischer e.K. in Kulmbach, das ich gemeinsam mit meinem Mann übernommen hatte. Dort durfte ich viele Kund:innen auf ihrem Weg zu einer bewussteren Ernährung begleiten.
-                </p>
+                  2008-2011 betrieb ich ein Bio-Bistro in Marktredwitz, in dem ich kreative pflanzenbasierte Gerichte entwickelte – nährstoffreich, bunt und voller Geschmack                </p>
                 <p className="text-gray-600 leading-relaxed">
-                  Parallel dazu betrieb ich ein veganes Bistro in Marktredwitz, in dem ich kreative pflanzenbasierte Gerichte entwickelte – nährstoffreich, bunt und voller Geschmack.
-                </p>
-                <p className="text-gray-600 leading-relaxed">
-                  Heute bin ich dabei, in Grabow und Boek (Mecklenburg-Vorpommern) ein Arbeitszentrum für gemeinsames Kochen, Ernährung, Wandel und bewusstes Leben aufzubauen.
+                  Heute bin ich dabei, in Boek (Mecklenburg-Vorpommern) ein Treffpunkt für gemeinsames Kochen aufzubauen.
                 </p>
               </div>
             </div>
@@ -66,9 +64,18 @@ export default function AboutPage() {
               <div className="prose prose-green max-w-none">
                 <p>
                   Mein Weg begann mit einem tiefen Interesse für Ernährung, Nachhaltigkeit und dem Wunsch, Menschen zu helfen, gesünder zu leben.
+
                 </p>
                 <p>
                   Nach vielen Jahren im Reformhausbetrieb und in der Gastronomie wuchs der Wunsch, Wissen über gesunde Lebensführung auf ganzheitliche Weise weiterzugeben.
+
+                </p>
+                <p>
+                  Geboren und aufgewachsen in Sankt Petersburg, bin ich 1998 nach Deutschland gekommen. Ich habe zwei Söhne ins Erwachsenenalter begleitet und lebe seit 2017 in dem kleinen Dorf Boek in Mecklenburg-Vorpommern. In der benachbarten Stadt Grabow habe ich einen Laden mit Natur- und Reformwaren und den Versandhandel DER GROSSE LADEN eröffnet.
+                </p>
+                <p>
+                  2009 habe ich Klaus Schubring, Makrobiotik Berater und Lehrer, auf einer Fachmesse kennengelernt. Diese Begegnung hat mich dazu gebracht mehr aus meinem Leben zu machen, dabei gesund und froh zu sein.
+
                 </p>
                 <p>
                   <strong>Was wir wissen oder zu wissen glauben:</strong> Wir studieren das Leben mit Hilfe gelöster Probleme, ungelöster Probleme,
