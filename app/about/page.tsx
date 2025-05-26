@@ -23,8 +23,7 @@ export default function AboutPage() {
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Über mich</h1>
               <p className="text-xl text-gray-200 max-w-[600px] mx-auto">
-                Meine Reise mit Bio-Lebensmitteln und nachhaltigem Leben
-              </p>
+                Meine Reise zu Makrobiotik          </p>
             </div>
           </div>
         </section>
@@ -46,7 +45,8 @@ export default function AboutPage() {
                   Hallo, ich bin <span className="text-green-600">Olga Häring-Seiwert</span>
                 </h2>
                 <p className="text-gray-600 leading-relaxed">
-                  Reformhausbetreiberin, Makrobiotik-Köchin und Inhaberin von MAcucina mit fast zwei Jahrzehnt Erfahrung im Bereich Makrobiotik, gesunder Ernährung und nachhaltiger Lebensweise.                </p>
+                  Reformhausbetreiberin, Makrobiotik-Köchin und Inhaberin von MAcucina mit fast zwei Jahrzehnt Erfahrung im Bereich Makrobiotik, gesunder Ernährung und nachhaltiger Lebensweise.
+                </p>
                 <p className="text-gray-600 leading-relaxed">
                   Von 2011 bis heute leite ich das traditionsreiche Reformhaus und Biomarkt in Marktredwitz (ursprünglich Reformhaus Wölfel). Dort darf ich zusammen mit Mitarbeitenden viele Kund:innen auf ihrem Weg zu einer bewussteren Ernährung begleiten.
                 </p>
@@ -63,19 +63,28 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold mb-6 text-center">Meine Geschichte</h2>
               <div className="prose prose-green max-w-none">
                 <p>
-                  Mein Weg begann mit einem tiefen Interesse für Ernährung, Nachhaltigkeit und dem Wunsch, Menschen zu helfen, gesünder zu leben.
-
+                  Mein Weg begann mit einem tiefen Interesse für gesunde Ernährung und Lebensweise.
                 </p>
                 <p>
-                  Nach vielen Jahren im Reformhausbetrieb und in der Gastronomie wuchs der Wunsch, Wissen über gesunde Lebensführung auf ganzheitliche Weise weiterzugeben.
-
+                  Geboren und aufgewachsen in Sankt Petersburg, bin ich 1998 nach Deutschland gekommen. Ich habe zwei Söhne ins Erwachsenenalter begleitet und lebe seit 2017 in dem kleinen Dorf Boek in Mecklenburg-Vorpommern. In der benachbarten Stadt Grabow habe ich in 2018 einen Laden mit Natur- und Reformwaren und den Versandhandel DER GROSSE LADEN eröffnet. Den seit 2025 Darren Sprock betreibt.
                 </p>
                 <p>
-                  Geboren und aufgewachsen in Sankt Petersburg, bin ich 1998 nach Deutschland gekommen. Ich habe zwei Söhne ins Erwachsenenalter begleitet und lebe seit 2017 in dem kleinen Dorf Boek in Mecklenburg-Vorpommern. In der benachbarten Stadt Grabow habe ich einen Laden mit Natur- und Reformwaren und den Versandhandel DER GROSSE LADEN eröffnet.
+                  2009 habe ich Klaus Schubring, Makrobiotik Berater und Lehrer, auf einer Fachmesse kennengelernt. Diese Begegnung hat mich  dazu gebracht mehr aus meinem Leben zu machen, dabei gesund und froh zu sein.
                 </p>
                 <p>
-                  2009 habe ich Klaus Schubring, Makrobiotik Berater und Lehrer, auf einer Fachmesse kennengelernt. Diese Begegnung hat mich dazu gebracht mehr aus meinem Leben zu machen, dabei gesund und froh zu sein.
-
+                  2008-2011 betrieb ich ein Bio-Bistro in Marktredwitz, in dem ich kreative pflanzenbasierte Gerichte entwickelte.
+                </p>
+                <p>
+                  Von 2011 bis heute leite ich das traditionsreiche Reformhaus und Biomarkt in Marktredwitz (ursprünglich Reformhaus Wölfel). Dort darf ich zusammen mit Mitarbeitenden viele Kund:innen auf ihrem Weg zu einer bewussteren Ernährung begleiten.
+                </p>
+                <p>
+                  Nach mehreren Jahren im Reformhausbetrieb und in der Gastronomie wuchs der Wunsch, Wissen über gesunde Lebensführung auf ganzheitliche Weise weiterzugeben.
+                </p>
+                <p>
+                  Heute bin ich dabei, in Boek (Mecklenburg-Vorpommern) in MAcucina ein Treffpunkt für gemeinsames Kochen aufzubauen.
+                </p>
+                <p>
+                  Ich freue mich darauf, meine Erfahrungen und mein Wissen mit dir zu teilen – in Workshops, Kursen und beim gemeinsamen Kochen.
                 </p>
                 <p>
                   <strong>Was wir wissen oder zu wissen glauben:</strong> Wir studieren das Leben mit Hilfe gelöster Probleme, ungelöster Probleme,
