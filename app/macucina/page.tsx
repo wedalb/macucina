@@ -96,7 +96,7 @@ export default function MAcucinaPage() {
                             </div>
                             <h3 className="text-xl font-serif mb-4 text-gray-900">Kochabende</h3>
                             <p className="text-gray-700">
-                                Im kleinen Kreis von bis zu 5 Personen kochen wir gemeinsam Makrobiotik-Gerichte und werden diese dann
+                                Im kleinen Kreis von bis zu 8 Personen kochen wir gemeinsam Makrobiotik-Gerichte und werden diese dann
                                 auch anschließend in gemütlicher Atmosphäre genießen.
                             </p>
                         </div>
@@ -153,7 +153,7 @@ export default function MAcucinaPage() {
                                         </div>
                                         <div className="flex items-center">
                                             <Users className="h-5 w-5 mr-3 text-green-600" />
-                                            <span>Maximal 5 Teilnehmer</span>
+                                            <span>Maximal 8 Teilnehmer</span>
                                         </div>
                                     </div>
                                     <div className="mt-6 text-2xl font-serif text-green-600">50€</div>
@@ -183,7 +183,7 @@ export default function MAcucinaPage() {
                                         </div>
                                         <div className="flex items-center">
                                             <Users className="h-5 w-5 mr-3 text-green-600" />
-                                            <span>Maximal 5 Teilnehmer</span>
+                                            <span>Maximal 8 Teilnehmer</span>
                                         </div>
                                     </div>
                                     <div className="mt-6 text-2xl font-serif text-green-600">50€</div>
@@ -214,7 +214,7 @@ export default function MAcucinaPage() {
                                         </div>
                                         <div className="flex items-center">
                                             <Users className="h-5 w-5 mr-3 text-green-600" />
-                                            <span>Maximal 5 Teilnehmer</span>
+                                            <span>Maximal 8 Teilnehmer</span>
                                         </div>
                                     </div>
                                     <div className="mt-6 text-2xl font-serif text-green-600">40€</div>
